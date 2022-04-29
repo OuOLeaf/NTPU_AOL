@@ -16,6 +16,8 @@
 
 - Step2: 產出每人修課資料 
   
+  北大學號代表學系
+  
   76-不動
   72-公行
   75-財政
@@ -26,19 +28,22 @@
   
   
 - Step3: 計算每人在四年的修課面向分數
-
+	
+  <img src="formula.png"/> 
+  
 - Step4: 繪製雷達圖
 
 - Step5: 產出報表
 
 ## 編寫的函式寫在 func.sas 
 
-- course_ori(data, req_list, elect_list)
+- course_ori(data, req_list, elect_list, ori_c)
   
   data：生成的 sas7bdat 名稱 為 data_cour
   
   req_list：必修名稱
   
   elect_list：選修名稱
-
+  
+  ori_c：面相個數
 - 

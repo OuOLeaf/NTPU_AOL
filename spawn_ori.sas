@@ -26,7 +26,9 @@
 						"行政革新專題" "兩岸關係專題";
 
 /* 生成課程面向檔 */
-%course_ori(policy, &req_list, &elect_list);
+%course_ori(policy, &req_list, &elect_list, 3);
+
+
 
 
 /*財政系*/
@@ -44,7 +46,7 @@
                        "財政金融實務分析" "社會安全制度與政策(二)" "財政金融實習" "公共事務專題" "財政大講堂";
 
 /* 生成課程面向檔 */
-%course_ori(finan, &req_list, &elect_list);
+%course_ori(finan, &req_list, &elect_list, 3);
 /*不動系*/
 /* 必修： required subject */
 %let req_list = "建築學概論" "統計學" "環境規劃" "土地法" "土地經濟學" 
@@ -66,4 +68,4 @@
 						"大地測量學" "航空攝影測量" "不動產財務分析" "建築企劃" "行政法"
 						"都市發展" "不動產經濟分析" "大數據之概說與應用" "土地利用與環境法";
 /* 生成課程面向檔 */
-%course_ori(realest, &req_list, &elect_list);
+%course_ori(realest, &req_list, &elect_list, 3);
