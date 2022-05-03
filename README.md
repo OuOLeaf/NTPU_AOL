@@ -10,6 +10,7 @@
 
 ## 流程
 
+
 - Step1: 產出課程面向檔
 
   用 spawn_ori.sas 可產出三個科系的面向資料
@@ -35,15 +36,14 @@
 
 - Step5: 產出報表
 
-## 編寫的函式寫在 func.sas 
+## 整理流程
 
-- course_ori(data, req_list, elect_list, ori_c)
-  
-  data：生成的 sas7bdat 名稱 為 data_cour
-  
-  req_list：必修名稱
-  
-  elect_list：選修名稱
-  
-  ori_c：面相個數
-- 
+- 列出該科系所有學生的學號
+
+- 一個個跑過每一個學號 找到該學號的修課資料
+
+- 計算該學號在四年的修課面向分數
+
+- 畫出雷達圖儲存 在 /radar_to
+
+- mainPolicy mainFinan mainRealest 可生成檔案

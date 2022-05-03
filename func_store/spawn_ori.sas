@@ -68,4 +68,7 @@
 						"大地測量學" "航空攝影測量" "不動產財務分析" "建築企劃" "行政法"
 						"都市發展" "不動產經濟分析" "大數據之概說與應用" "土地利用與環境法";
 /* 生成課程面向檔 */
+
 %course_ori(realest, &req_list, &elect_list, 3);
+%spawn_radar_score(policy);
+

@@ -1,4 +1,4 @@
-%let libData = D:\Dropbox\Andy\AOL課程評量\計算面向分數\行政、財政、不動\data;
+
 %include 'func.sas';
 proc import datafile = "&libData./104學生修課資料.xlsx" out = score104 replace;
 run;
@@ -6,14 +6,14 @@ run;
 data libTable.score_data;
 set score104;
 /* 取出三系資料 */
-depid = substr(left(id), 5, 2);
-if depid in (72, 75, 76);
+depid = substr(left(id), 4, 3);
+if depid in (472, 475, 476);
 if level = '學士班';
 
 
-if depid = 76 then department = "realest";
-else if depid = 75 then department = "finan";
-else if depid = 72 then department = "policy";
+if depid = 476 then department = "realest";
+else if depid = 475 then department = "finan";
+else if depid = 472 then department = "policy";
 
 call streaminit(123);
 

@@ -8,7 +8,8 @@
 %spawn_radar_score(finan);
 %spawn_radar_score(realest);
 
-
+DM log "OUT;CLEAR;LOG;CLEAR;";
+dm 'odsresults; clear';
 /*%put &id_list;*/
 /**/
 /*proc print data = libTable.score_data;run;*/
